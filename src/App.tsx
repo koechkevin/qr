@@ -3,7 +3,7 @@ import QRCode from 'qrcode';
 
 function App() {
   const [img, setImg] = useState();
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(' ');
   useEffect(() => {
     if (value) {
       QRCode.toDataURL(value,  (err, image) => {
