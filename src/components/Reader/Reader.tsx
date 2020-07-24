@@ -5,7 +5,8 @@ import classes from './Reader.module.scss';
 import { Text } from '../Text';
 import VCard from '../VCard/VCard';
 import QRCode from 'qrcode';
-import {Others} from "../Others";
+import { Others } from '../Others';
+import { Wifi } from '../Others/Others';
 
 const Reader: FC<Props> = (props) => {
   const [active, setActive] = useState<number | undefined>();
@@ -35,6 +36,14 @@ const Reader: FC<Props> = (props) => {
       label: 'TEXT',
       component: <Text onChangeVal={onChange} />,
     },
+    {
+      label: 'WIFI',
+      component: (
+        <div style={{ display: 'flex', justifyContent: 'center', background: '#fff', padding: 16 }}>
+          <Wifi onChangeVal={onChange} />
+        </div>
+      ),
+    },
   ];
   return (
     <Fragment>
@@ -57,7 +66,7 @@ const Reader: FC<Props> = (props) => {
           </div>
           <div style={{ flex: 1, width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
             <div
-              style={{ width: 'max-content'}}
+              style={{ width: 'max-content' }}
               onClick={() => {
                 setActive(undefined);
                 setValue('');
@@ -69,7 +78,7 @@ const Reader: FC<Props> = (props) => {
             </div>
           </div>
         </div>
-        {active !== undefined  ? options[active]?.component : <Others onChangeVal={onChange}/>}
+        {active !== undefined ? options[active]?.component : <Others onChangeVal={onChange} />}
       </div>
       {value && <img style={{ background: 'transparent' }} alt="" src={img} />}
     </Fragment>

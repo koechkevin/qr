@@ -13,7 +13,7 @@ export const Wifi: FC<any> = (props) => {
     setValues(vals);
   };
   return (
-    <div className={classes.card}>
+    <div style={{ maxWidth: 320 }} className={classes.card}>
       <label>SSID:</label>
       <select onChange={onChange} className={classes.select}>
         <option value="" />
