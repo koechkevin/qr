@@ -11,3 +11,14 @@
   justify-content: center;
   color: #fff;
 }
+
+.button {
+  height: 32px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #28a085;
+  cursor: pointer;
+}

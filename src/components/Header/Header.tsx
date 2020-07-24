@@ -12,7 +12,7 @@ const Header: FC<Props> = () => {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flex: 3}}>
           <div>Solutions</div>
           <div>Pricing</div>
-          <div>Sign in</div>
+          <div className={classes.button} role="button">Sign in</div>
         </div>
       </div>
     </div>
