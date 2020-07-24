@@ -1,0 +1,57 @@
+.root {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  display: flex;
+}
+
+.button {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background: lightgray;
+  }
+  &.active {
+    background: #28a085;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.card {
+  background: #eee;
+  box-shadow: 5px 5px 5px -5px #333;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.select {
+  width: 100%;
+  border: 1px solid lightgray;
+  flex:1;
+  outline: 0;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.input {
+  border: 1px solid lightgray;
+  flex:1;
+  outline: 0;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+
+  &:focus {
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+  }
+}

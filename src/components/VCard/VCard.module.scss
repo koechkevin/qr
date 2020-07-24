@@ -1,0 +1,36 @@
+.root {
+  border: 1px solid lightgray;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input {
+  border: 1px solid lightgray;
+  flex:1;
+  outline: 0;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 8px;
+  &:focus {
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+  }
+}
+
+.textArea {
+  //@extend .input;
+  width: 100%;
+  outline: 0;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid lightgray;
+  margin: 4px 8px;
+  &:focus {
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+  }
+}

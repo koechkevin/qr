@@ -1,0 +1,23 @@
+.root {
+  background: #eee;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.button {
+  width: 100px;
+  height: 48px;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &.active {
+    background: #282c34;
+    color: white;
+  }
+}
+
