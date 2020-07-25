@@ -80,7 +80,16 @@ const Reader: FC<Props> = (props) => {
         </div>
         {active !== undefined ? options[active]?.component : <Others onChangeVal={onChange} />}
       </div>
-      {value && <img style={{ background: 'transparent' }} alt="" src={img} />}
+      {value && (
+        <Fragment>
+          <img style={{ background: 'transparent' }} alt="" src={img} />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <a href={img} className={classes.download} download>
+              Download
+            </a>
+          </div>
+        </Fragment>
+      )}
     </Fragment>
   );
 };

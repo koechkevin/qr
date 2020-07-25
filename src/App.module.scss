@@ -7,6 +7,17 @@
     font-size: 46px;
   }
 
+  .sidebar {
+    width: 320px;
+    height: 480px;
+    //background: red;
+    top: 111px;
+    border-radius: 0 25px 25px 0;
+    position: fixed;
+    left: 0;
+    box-shadow: -2px 2px 11px -3px #333;
+  }
+
   .body {
     margin: auto;
     width: 100%;
